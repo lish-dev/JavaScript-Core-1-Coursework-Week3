@@ -10,8 +10,10 @@
 var greeting = "hello";
 
 function capitalise(str) { 
-  
-  
+
+  var dan = str[0].toUpperCase()+ str.slice(1);
+
+  return dan
   }
 
 

@@ -21,7 +21,15 @@
   Let's first look at an example that will teach you how to use these methods.
 */
 
-function bushChecker() {}
+function bushChecker(bushBerry1) {
+  let bushBerryColours1 = bushBerry1.every(bushBerryColours1 =>bushBerryColours2==="pink")
+    if("pink"===true){
+    return "Toxic! Leave bush alone"
+  }
+else {
+  return "Bush is safe to eat from";
+}
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

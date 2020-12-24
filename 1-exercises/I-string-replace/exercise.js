@@ -11,10 +11,12 @@
 */
 
 let story =
-  "I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
+"I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.";
 
-let result = story.replace("I like dogs. One day I went to the park and I saw 10 dogs. It was a great day.", "I like cats. One night I went to the park  and I saw 100000 cats. It was a brilliant night.");
-console.log(result);
+let change = story.replace ("dogs","cats");
+
+let result = story.replace(",")
+console.log(change);
 
 /* EXPECTED OUTPUT */
 
