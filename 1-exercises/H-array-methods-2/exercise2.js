@@ -7,7 +7,14 @@
   Tip: use the string method .split() and the array method .join()
 */
 
-function capitalise(str) {}
+var greeting = "hello";
+
+function capitalise(str) { 
+  
+  
+  }
+
+
 
 /* 
   DO NOT EDIT BELOW THIS LINE
