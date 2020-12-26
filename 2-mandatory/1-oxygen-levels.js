@@ -11,7 +11,10 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function safeLevels() {}
+function safeLevels(item){
+  return item.find(num => parseFloat(num)> 19.5 && parseFloat(num) < 23.5);
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
