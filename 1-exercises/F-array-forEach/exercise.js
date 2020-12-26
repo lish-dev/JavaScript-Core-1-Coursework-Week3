@@ -12,14 +12,14 @@ var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 var count = ["Fizz", "Buzz"];
   
 arr.forEach((arr, count)=> {
-  if (arr * 5 === 0 || count * 3 === 0) {
-    console.log("Buzz");  
+  if (arr % 3 === 0 && count % 5 === 0) {
+    console.log("Fizz");  
   }else if (arr % 3 === 0) {
-    console.log ("Fizz");
+    console.log ("FizzBuzz");
   }else if  (arr % 5 === 0) {
-    console.log("FizzBuzz");
+    console.log("Buzz");
   }else {
-     console.log(arr + count);
+     console.log(count + arr);
   }   
 });
 

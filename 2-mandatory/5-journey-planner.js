@@ -22,10 +22,13 @@ function checkCodeIsThere(stringText) {
   //edit code below
   if (stringText) {
     return stringText;
+  if (stringText.includes(magicWord)) {
+    return stringText.indexOf(magicWord);
+  }  
   } else {
     return "Not found";
   }
-}
+
 
 /*
   I am new to London and would like to know what transport I can take to different famous locations.
