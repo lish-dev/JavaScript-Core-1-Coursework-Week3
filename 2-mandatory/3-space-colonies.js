@@ -15,7 +15,10 @@
   
 */
 
-function colonisers() {}
+function colonisers(voyagers) {
+  return voyagers.filter( names => names.includes("family") && names.startsWith("A"))
+
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
