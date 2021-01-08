@@ -18,13 +18,10 @@
 */
 
 function checkCodeIsThere(stringText) {
-  let magicWord = "code";
+  var magicWord = "code";
   //edit code below
-  if (stringText) {
-    return stringText;
-  if (stringText.includes(magicWord)) {
-    return stringText.indexOf(magicWord);
-  }  
+  if (stringText.includes("code")) {
+    return stringText.indexOf("code");
   } else {
     return "Not found";
   }
@@ -67,7 +64,13 @@ function checkCodeIsThere(stringText) {
   
   Hint: Use the corresponding array method to split the array.
 */
-function getTransportModes() {}
+function getTransportModes(arr){
+  var transport = arr.slice (1, arr.length);
+  return transport;
+}
+
+
+
 
 /*
   Implement the function isAccessibleByTransportMode that
@@ -84,8 +87,15 @@ function getTransportModes() {}
     
   Hint: Use the corresponding array method to decide if an element is member of an array.
 */
-function isAccessibleByTransportMode() {}
 
+function isAccessibleByTransportMode(transport,travel) {
+    if(transport.indexOf(travel)){ 
+      return true;
+    }else{
+      return true;
+ 
+}
+}
 /*
   Implement the function getLocationName that
 
@@ -95,7 +105,11 @@ function isAccessibleByTransportMode() {}
    - Returns the name of the location
       e.g: "Tower Bridge"
 */
-function getLocationName() {}
+function getLocationName(arr) {
+  var location = arr[0];
+  return location;
+}
+
 
 /*
  We arrived at the final method. it won't take long if you use the previously implemented functions wisely.
@@ -124,9 +138,23 @@ function getLocationName() {}
    
   Advanced challange: try to use arrow function when invoking an array method.
 */
-function journeyPlanner(locations, transportMode) {
+
+function arraysEqual(getTransportModes, getTransport){
+   if (getTransportModes== getTransport) return true;
+   if (getTransportModes == null || getTransport == null) return false;
+   // if (getTransportModes.length != getTransport.length) return false;
+  
+    for (let i = 0; i < getTransportModes.length; ++i) {
+      if (getTransportModes[i] !== getTransport[i]) return false;
+    }
+  
+    return true;
+  }
+  }
+
   // Implement the function body
-}
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

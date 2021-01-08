@@ -9,21 +9,22 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-var count = ["Fizz", "Buzz"];
+var count= ["Fizz", "Buzz", "FizzBuzz"];
   
-arr.forEach((arr, count)=> {
-  if (arr % 3 === 0 && count % 5 === 0) {
-    console.log("Fizz");  
-  }else if (arr % 3 === 0) {
-    console.log ("FizzBuzz");
-  }else if  (arr % 5 === 0) {
-    console.log("Buzz");
-  }else {
-     console.log(count + arr);
-  }   
-});
+function fizzbuzz(number){
+  if(number % 3===0 && number % 5===0){
+  console.log("FizzBuzz");
+}
+else{
+console.log(number);
+}
+}
 
-//console.log (count);
+arr.forEach(fizzbuzz);
+ 
+
+  
+
 
 
 

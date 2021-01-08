@@ -22,8 +22,15 @@ PasswordValidationResult=  [false, false, false, false, true]
 
 */
 
+var reGex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[!#$%&*,.@^])(?=.{5,})/;
 function validatePasswords(passwords) {
+var validity = passwords.map(password => {
+return reGex.test(password)&& passwords.indexOf(password) === passwords.lastIndexOf(password);
 
+}
+)
+
+return validity;
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
